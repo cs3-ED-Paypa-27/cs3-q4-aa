@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Earlalou">
+    <meta name="section" content="Calcium">
+    <meta name="keyword" content="Q4AA">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img src="https://img.freepik.com/premium-vector/cognitive-science-icon-simple-element-illustration-cognitive-science-symbol-design-from-artificial-intelligence-collection-can-be-used-web-mobile_159242-12196.jpg" alt="Logo" class="logo">
+        <h1>Cognitive Science: Understanding the Mind and its Processes</h1>
+        <div class="logo"></div>
+        <div class="nav-buttons">
+            <button onclick="showSignupPopup()">Sign Up</button>
+            <button onclick="showLoginPopup()">Log In</button>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="card">
+            <br><br><br> 
+            <p>
+                Cognitive science is the interdisciplinary study of the mind and its processes, drawing upon a rich tapestry of insights from various fields. It seamlessly integrates perspectives from psychology, linguistics, philosophy, artificial intelligence, neuroscience, and anthropology.
+
+In this vibrant convergence of disciplines, cognitive science seeks to unravel the mysteries of human cognition: how we think, learn, remember, communicate, and perceive. It delves into the intricate mechanisms underlying mental phenomena, exploring the subtle interplay between thought, language, culture, and biology.
+
+By synthesizing diverse methodologies and theoretical frameworks, cognitive science offers a holistic understanding of the complex workings of the mind. It illuminates the fundamental processes that shape human experience, shedding light on the mechanisms of consciousness, memory, problem-solving, decision-making, and emotion.
+
+            </p>
+            <br><br><br>  <br><br><br>
+            <button onclick="showSignupPopup()" id="learnButton">Learn More</button>
+        </div>
+    </div>
+    <div class="popup-container signup" onclick="hideSignupPopup()">
+        <div class="signup-form" onclick="event.stopPropagation();">
+            <main>      
+                <section>
+                    <fieldset>
+                        <legend>Sign-Up</legend>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+
+                        <label for="preferredUsername">Preferred Username:</label><br>
+                        <input type="text" id="preferredUsername" name="preferredUsername"><br>
+
+                        <label for="pwd">Password:</label><br>
+                        <input type="password" id="pwd" name="pwd"><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+
+                        <label for="gender">Gender:</label><br>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="preferNotToSay">Prefer not to say</option>
+                        </select><br><br>
+
+                        <label for="address">Address:</label><br>
+                        <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+
+                        <input type="submit" value="Submit" id="signupSubmit" onclick="validateSignupForm(event)">
+                        <input type="reset" value="Reset">
+                    </fieldset>
+                </section>
+            </main>
+        </div>
+    </div>
+    <div class="popup-container login" onclick="hideLoginPopup()">
+        <div class="login-form" onclick="event.stopPropagation();">
+            <main>      
+                <section>
+                    <fieldset>
+                        <legend>Log In</legend>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username"><br>
+
+                        <label for="loginPwd">Password:</label><br>
+                        <input type="password" id="loginPwd" name="loginPwd"><br>
+
+                        <input type="submit" value="Log In" id="loginSubmit" onclick="validateLoginForm(event)">
+                    </fieldset>
+                </section>
+            </main>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+    *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    body {
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #F2DCF2;
+        }
+
+        nav {
+            background-color: #BF6991;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #666;
+            margin: auto;
+margin-top: -5%;
+        }
+        .card{
+            font-size: 30px;
+            align-items: center;
+            width: 90%;
+            max-width: 80%;
+            height: 600px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            top: 150px;
+            left: 10%;
+            position: absolute;
+            background-image: url('achievement.jpeg');
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s;
+    }
+        .logo{
+			height: 60px;
+            float: left;
+			margin-top: 10px;
+			margin-left: 20px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-buttons button ,#learnButton{
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #learnButton{
+           width:25%;
+           height: 70px;
+           justify-content: center;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #444;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .popup-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: none;
+        }
+
+        .signup-form, .login-form {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .signup-form h2, .login-form h2 {
+            font-size: 24px;
+            margin-bottom: 1em;
+        }
+
+        .signup-form label, .login-form label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        .signup-form input, .login-form input, .signup-form textarea, .login-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .signup-form button, .login-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .signup-form button:hover, .login-form button:hover {
+            background-color: #444;
+        }
+
+        .popup-container.show {
+            display: flex;
+        }
+
+        .popup-container.signup {
+            z-index: 1001;
+        }
+
+        .popup-container.login {
+            z-index: 1002;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: transparent;
+            box-shadow: none;
+            color: #333;
+        }
+
+        legend {
+            padding: 0px 10px;
+            color: #000;
+            background-color: #BF6991;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 1.2em;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #BF6991;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        #submittedInfo {
+            margin-top: 20px;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
